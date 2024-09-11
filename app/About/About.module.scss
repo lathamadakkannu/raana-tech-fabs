@@ -1,0 +1,60 @@
+.about{
+    width: 85%;
+    margin: 0 auto;
+  
+    .aboutHeader{
+        text-align: center;
+        font-size: 24px;
+        margin: 2% 0;
+        color: red;
+        font-weight: bold;
+    }
+
+    .aboutContainer{
+        background-image: url('../../public/assert/man-working-with-electric-steel-cutter-machine-near-sparks.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        box-sizing: border-box;
+        opacity: 0.9;
+        margin-bottom: 20px;
+
+        .aboutRow{
+            color: white;
+            box-sizing: border-box;
+            border:1px solid gray;
+           border-radius:10px;
+        }
+
+        .aboutCol{
+             
+            p{
+                font-size: 16px; 
+                padding: 20px;
+                word-spacing: 4px;
+                letter-spacing: 1px;
+                line-break: auto;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:300px) {
+    .about{
+        padding-top:70px 
+    }
+}
+
+@media screen and (min-width:600px) {
+    .about{
+        padding-top:120px 
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .about{
+        padding-top:100px 
+    }
+}

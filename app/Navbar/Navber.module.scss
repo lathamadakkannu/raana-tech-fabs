@@ -1,0 +1,152 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //padding: 0.625rem 1.25rem;
+  padding:0px 10px;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.scrolled {
+    background-color: #00aff0;
+    color: #fff;
+
+    .li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 25.25rem;  
+    }
+  }
+
+  .menuIcon {
+    display: none;  
+  }
+
+.ul {
+  width: 60%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+
+  .li {
+    margin-left: 1.25rem;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1.20rem;
+      //font-size:10px;
+      padding: 0.625rem 1.25rem;
+      transition: color 0.3s;
+
+        &:hover {
+          color: #fff;
+          background-color: #00aff0;
+          border-radius: 0.625rem;
+        }
+
+          &.active {
+            color: #fff;
+            background-color: #00aff0;
+            border-radius: 0.625rem;
+          }
+    }
+  }
+}
+
+}
+
+
+@media (max-width: 48rem) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logoContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menuIcon {
+      display: block;  
+      
+      svg {
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .ul {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      padding: 0.625rem 0;
+      background-color: aliceblue;
+
+      &.active {
+        display: flex; 
+      }
+
+      .li {
+        margin-left: 0;
+        padding: 0.625rem 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .logo {
+      justify-content: space-between;
+      //margin-bottom: 0.625rem;
+    }
+  }
+
+  .logo img {
+    width: 18rem;  
+  }
+}
+ 
+@media (max-width: 30rem) {
+  .nav {
+    //padding: 0.625rem;
+
+    .li {
+      font-size: 0.875rem;
+    }
+
+    .logo img {
+      width: 15rem; 
+    }
+  }
+}
+
+ 
+@media (min-width: 48.0625rem) {
+  .menuIcon {
+    display: none;  
+  }
+
+  .ul {
+    display: flex;
+  }
+}

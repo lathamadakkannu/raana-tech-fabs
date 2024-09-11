@@ -1,0 +1,188 @@
+
+.contact {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    
+    .ContactHead{
+        text-align: center;
+        font-size: 24px;
+        margin: 2% 0;
+        color: red;
+        font-weight: bold;
+    }
+
+    .contactContainer{
+        display: flex;
+        background-color: #f6f5f5;
+   
+    .contactAddress{
+        .contactAddressContent{
+            display: flex;
+            flex-wrap: wrap;
+
+            .addressContent{   
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin: 10px;
+
+                .head{
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                }
+
+                .content{
+                    padding: 0 20px; 
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .contactAddressMap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            iframe{
+            width: calc(100% - 20px);
+           }
+        }
+    }
+
+    .contactForm{
+        padding: 20px;
+
+        .contactFormHead{
+            h2{
+                font-size: 24px;
+                padding:10px 0px;
+                font-weight: 600;
+            }
+        }
+    
+        .contactFormContent{
+           
+            .formContent{
+                display: flex;
+                flex-direction: column;
+                
+                input{
+                    font-size: 16px;
+                    padding: 15px;
+                    margin-bottom: 10px;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                
+                textarea {
+                    margin-bottom: 10px;
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    height: 150px;  
+                    resize: vertical;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;  
+                  }
+                  
+            }
+            
+            button{
+                display: block;
+                width: 40%;
+                font-size: 20px;
+                padding: 10px;
+                background-color: #0084cd;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 60%;
+                transition: background-color 0.3s ease;
+            }
+        }
+    }
+    }
+    }
+    
+    @media screen and (min-width:300px) {
+        .contact{
+            padding-top: 70px;
+            width:100%;
+        }
+
+
+        .contactContainer{
+            flex-direction: column;
+        }
+
+        .contactAddress{
+            width:calc(100% - 20px);
+
+          .contactAddressContent{
+            flex-direction: column;
+
+            .addressContent{
+                width: 100%;
+            }
+          }
+          
+        }
+
+        .contactForm{
+            width: 100%;
+        }
+    }
+    
+    @media screen and (min-width:600px) {
+        .contact{
+            padding-top: 120px;
+        }
+        
+        .contactContainer{
+            flex-direction: column;
+        }
+        
+        .contactAddress, .contactForm{
+            width:100%;
+            
+            .contactAddressContent{
+                flex-direction: row;
+        
+                .addressContent{
+                    width: 100%;
+                }
+              }
+            }
+    }
+    
+    @media screen and (min-width:1024px) {
+        .contact{
+            padding-top: 120px;
+        }
+    
+        .contactContainer{
+            flex-direction: row;
+        }
+    
+        .contactAddress, .contactForm{
+            width: calc(50% - 20px);
+            padding: 20px;
+    
+            .contactAddressContent{
+                flex-direction: row;
+                
+                .addressContent{
+                    width: calc(50% - 20px);
+                }
+            }
+        }
+    }
