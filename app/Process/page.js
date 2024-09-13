@@ -44,8 +44,6 @@ const Process = () => {
           </div>
         </div>
 
-        <div className={styles.processArrowtopTObottom}> ↓</div>
-
         <div className={styles.processRow}>
           <div className={styles.processCol}>
             <div className={styles.processCard}>
