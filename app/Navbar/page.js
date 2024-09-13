@@ -33,7 +33,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "products", "process", "gallery", "contact"];
+      const sections = ["home", "aboutUs", "products", "process", "gallery", "contactUs"];
 
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
@@ -88,7 +88,7 @@ const Navbar = () => {
       </div>
 
       <ul className={`${styles.ul} ${menuOpen ? styles.active : ""}`}>
-        {["home", "about", "products", "process", "gallery", "contact"].map((section) => (
+        {["home", "about Us", "products", "process", "gallery", "contact Us"].map((section) => (
           <li key={section} className={styles.li}>
             
             <a
